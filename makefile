@@ -13,8 +13,8 @@ $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -c $<
 
 gui:
-	g++ -c testGUI.cpp
-	g++ testGUI.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system
+	g++ -c GUI.cpp
+	g++ GUI.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system
 	
 clean:
 	rm -f $(TARGET) $(OBJS)
